@@ -1,0 +1,225 @@
+$black: #000;
+$line_height:25px;
+$font_size:12px;
+$proxima_font: proxima;
+$bebas_font: bebas;
+$font_normal: 400;  
+$font_semibold:600;    
+$font_bold:700; 
+$font_exbold:800;  
+$font_it: italic;
+$font_nm: normal; 
+
+body{
+color:$black;
+line-height:$line_height;
+font-size:$font_size;
+font-family:$proxima_font;
+font-style: $font_nm;
+}
+
+a{
+color:$black;
+text-decoration:none;
+}
+
+a:hover{
+color:$black;
+}
+
+.container {
+    padding: 0 98px;
+    width: 1191px;
+}
+
+
+.flx {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*====navigation style====*/
+
+.navbar{
+
+margin-bottom:0;
+border:none;
+
+.custom-logo{
+max-width:100%;
+height:auto;
+}
+
+.navbar-brand{
+	height:auto;
+	padding: 0;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0;
+}
+
+
+.navbar-nav > li{
+margin-right:100px;
+}
+
+.navbar-nav > li > a{
+padding:0;
+background:none;
+text-transform:uppercase;
+} 
+
+.well-text {
+    word-spacing: 3px;
+	padding-right:38px;
+}
+
+.cart-box {
+background-color: #ebebeb;
+border: medium none;
+border-radius: 0;
+box-shadow: none;
+padding: 7px 23px 7px 30px;
+position: absolute;
+right: 0;
+text-transform: uppercase;
+top: 0;	
+}
+
+#navbar{
+padding:0;
+text-align:center;
+}
+
+.social {
+   padding-right: 8px;
+	li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+	li:last-child{
+		margin-right:0;
+	}
+}
+
+}
+/*===banner style ====*/
+.banner-wrapper{
+position:relative;
+.banner{
+margin-left:313px;
+}
+
+.container {
+    bottom: -50px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.baaner-text {
+    font-size: 39px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 51px;
+}
+
+}
+
+/*====home shop slider===*/
+
+.dapper-shop {
+    margin-top: 145px;
+	background-color:#f7f7f7;
+	padding:0 14px;
+	position:relative;
+
+.products{
+padding:0;
+
+img{
+width:100%;
+}
+
+.product{
+margin:0 6px;
+}
+
+}	
+	
+.title{
+   font-weight:$font_exbold;
+   text-transform:uppercase;
+   padding: 36px 0px;
+   text-align:center;
+   margin:0;
+}
+
+
+
+.owl-item{
+overflow:hidden;
+}
+
+.prev , .next{
+position:absolute;
+top:50%;
+-webkit-transform:translateY(-50%);
+-moz-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+-o-transform:translateY(-50%);
+transform:translateY(-50%);
+z-index:1;
+font-family:$bebas_font;
+font-size:24px;
+padding:0;
+cursor:pointer;
+text-decoration:none;
+}
+
+.prev{
+left:9px;
+}
+
+.next{
+right:9px;
+}
+
+.woocommerce-LoopProduct-link > h3 {
+font-size: 12px;
+font-weight: 600;
+margin-bottom: 17px;
+margin-top: 20px;
+padding-left: 23px;
+text-transform: uppercase;
+font-weight:$font_semibold;
+display:inline-block;
+}
+
+.woocommerce-LoopProduct-link .price {
+font-weight:$font_semibold;
+}
+
+.add_to_cart_button{
+display:block;
+font-style:$font_it;
+font-weight:$font_semibold;
+text-transform: uppercase;
+padding-left: 23px; 
+padding-bottom:25px;
+} 	
+}
+
+/** latest news section **/

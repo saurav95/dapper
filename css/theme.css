@@ -1,0 +1,181 @@
+body {
+  color: #000;
+  line-height: 25px;
+  font-size: 12px;
+  font-family: proxima;
+  font-style: normal;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.container {
+  padding: 0 98px;
+  width: 1191px;
+}
+
+.flx {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*====navigation style====*/
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+.navbar .custom-logo {
+  max-width: 100%;
+  height: auto;
+}
+.navbar .navbar-brand {
+  height: auto;
+  padding: 0;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin: 0;
+}
+.navbar .navbar-nav > li {
+  margin-right: 100px;
+}
+.navbar .navbar-nav > li > a {
+  padding: 0;
+  background: none;
+  text-transform: uppercase;
+}
+.navbar .well-text {
+  word-spacing: 3px;
+  padding-right: 38px;
+}
+.navbar .cart-box {
+  background-color: #ebebeb;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 7px 23px 7px 30px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
+.navbar #navbar {
+  padding: 0;
+  text-align: center;
+}
+.navbar .social {
+  padding-right: 8px;
+}
+.navbar .social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar .social li:last-child {
+  margin-right: 0;
+}
+
+/*===banner style ====*/
+.banner-wrapper {
+  position: relative;
+}
+.banner-wrapper .banner {
+  margin-left: 313px;
+}
+.banner-wrapper .container {
+  bottom: -50px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.banner-wrapper .baaner-text {
+  font-size: 39px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 51px;
+}
+
+/*====home shop slider===*/
+.dapper-shop {
+  margin-top: 145px;
+  background-color: #f7f7f7;
+  padding: 0 14px;
+  position: relative;
+}
+.dapper-shop .products {
+  padding: 0;
+}
+.dapper-shop .products img {
+  width: 100%;
+}
+.dapper-shop .products .product {
+  margin: 0 6px;
+}
+.dapper-shop .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 36px 0px;
+  text-align: center;
+  margin: 0;
+}
+.dapper-shop .owl-item {
+  overflow: hidden;
+}
+.dapper-shop .prev, .dapper-shop .next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  font-family: bebas;
+  font-size: 24px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.dapper-shop .prev {
+  left: 9px;
+}
+.dapper-shop .next {
+  right: 9px;
+}
+.dapper-shop .woocommerce-LoopProduct-link > h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 17px;
+  margin-top: 20px;
+  padding-left: 23px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+}
+.dapper-shop .woocommerce-LoopProduct-link .price {
+  font-weight: 600;
+}
+.dapper-shop .add_to_cart_button {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 23px;
+  padding-bottom: 25px;
+}
+
+/** latest news section **/
