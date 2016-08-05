@@ -145,7 +145,7 @@ margin-left:313px;
 .dapper-shop {
 	margin-top: 145px;
 	background-color:#f7f7f7;
-	padding:0 14px;
+	padding:36px 14px 23px 14px;
 	position:relative;
 
 .products{
@@ -164,7 +164,6 @@ img{
 .title{
    font-weight:$font_exbold;
    text-transform:uppercase;
-   padding: 36px 0px;
    text-align:center;
    margin:0;
 }
@@ -220,7 +219,6 @@ img{
 	font-weight:$font_bold;
 	text-transform: uppercase;
 	padding-left: 23px; 
-	padding-bottom:25px;
 }
 
 .price::before {

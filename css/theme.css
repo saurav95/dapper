@@ -115,7 +115,7 @@ a:hover {
 .dapper-shop {
   margin-top: 145px;
   background-color: #f7f7f7;
-  padding: 0 14px;
+  padding: 36px 14px 23px 14px;
   position: relative;
 }
 .dapper-shop .products {
@@ -130,7 +130,6 @@ a:hover {
 .dapper-shop .title {
   font-weight: 800;
   text-transform: uppercase;
-  padding: 36px 0px;
   text-align: center;
   margin: 0;
 }
@@ -177,7 +176,6 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   padding-left: 23px;
-  padding-bottom: 25px;
 }
 .dapper-shop .price::before {
   content: "/ /";
