@@ -7,6 +7,11 @@ body {
   letter-spacing: 1px;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .breadcrumb {
   background: transparent none repeat scroll 0 0;
   margin: 0;
@@ -133,13 +138,15 @@ a:hover {
 }
 
 /*===banner style ====*/
-.home-banner .banner-wrapper, .stockists-banner .banner-wrapper, .page-title .banner-wrapper {
+.home-banner .banner-wrapper, .stockists-banner .banner-wrapper, .page-title .banner-wrapper, .about-banner .banner-wrapper {
   position: relative;
 }
-.home-banner .banner-wrapper .banner, .stockists-banner .banner-wrapper .banner, .page-title .banner-wrapper .banner {
+.home-banner .banner-wrapper .banner, .stockists-banner .banner-wrapper .banner, .page-title .banner-wrapper .banner, .about-banner .banner-wrapper .banner {
   margin-left: 313px;
+  position: relative;
+  z-index: 1;
 }
-.home-banner .banner-wrapper .container, .stockists-banner .banner-wrapper .container, .page-title .banner-wrapper .container {
+.home-banner .banner-wrapper .container, .stockists-banner .banner-wrapper .container, .page-title .banner-wrapper .container, .about-banner .banner-wrapper .container {
   bottom: -50px;
   left: 50%;
   position: absolute;
@@ -149,16 +156,22 @@ a:hover {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.home-banner .banner-wrapper .banner-text, .stockists-banner .banner-wrapper .banner-text, .page-title .banner-wrapper .banner-text {
+.home-banner .banner-wrapper .banner-text, .stockists-banner .banner-wrapper .banner-text, .page-title .banner-wrapper .banner-text, .about-banner .banner-wrapper .banner-text {
   font-size: 39px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 51px;
 }
 
+.home .dapper-shop {
+  margin-top: 145px;
+  margin-bottom: 0;
+}
+
 /*====home shop slider===*/
 .dapper-shop {
-  margin-top: 145px;
+  margin-top: 65px;
+  margin-bottom: 65px;
   background-color: #f7f7f7;
   padding: 36px 14px 23px 14px;
   position: relative;
@@ -344,16 +357,13 @@ footer .copyright .breadcrumb > li + li::before {
 }
 
 /**=== Stockist page ===**/
-.stockists-banner .banner, .page-title .banner {
-  z-index: 1;
-}
-.stockists-banner .banner-text-wrapper, .page-title .banner-text-wrapper {
+.stockists-banner .banner-text-wrapper, .page-title .banner-text-wrapper, .about-banner .banner-text-wrapper {
   background: #f7f7f7 none repeat scroll 0 0;
   bottom: -50px;
   position: absolute;
   width: 100%;
 }
-.stockists-banner .banner-text-wrapper .container, .page-title .banner-text-wrapper .container {
+.stockists-banner .banner-text-wrapper .container, .page-title .banner-text-wrapper .container, .about-banner .banner-text-wrapper .container {
   z-index: 2;
   position: relative;
   top: -50px;
@@ -384,10 +394,6 @@ footer .copyright .breadcrumb > li + li::before {
   padding-top: 235px;
 }
 
-.blog .dapper-shop {
-  margin: 63px 0;
-}
-
 .blog-content {
   background: #f7f7f7 none repeat scroll 0 0;
 }
@@ -405,4 +411,26 @@ footer .copyright .breadcrumb > li + li::before {
 .blog-content .latest-news .breadcrumb {
   font-weight: 600;
   font-style: italic;
+  margin-right: 20px;
+}
+
+/**=======page========**/
+.page-content {
+  background: #f7f7f7 none repeat scroll 0 0;
+  text-transform: uppercase;
+  padding: 60px 0px;
+}
+.page-content p {
+  font-size: 16px;
+}
+
+/**=======About page========**/
+.about-banner .container {
+  height: 266px;
+}
+
+.about-content {
+  background: #f7f7f7 none repeat scroll 0 0;
+  text-transform: uppercase;
+  padding: 68px 0;
 }
