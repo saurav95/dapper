@@ -7,6 +7,26 @@ body {
   letter-spacing: 1px;
 }
 
+.breadcrumb {
+  background: transparent none repeat scroll 0 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.breadcrumb > li + li::before {
+  content: "/ /";
+  color: #000;
+  padding: 0 7px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -15,6 +35,14 @@ a {
 a:hover {
   color: #000;
   text-decoration: none;
+}
+
+.title {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+  margin: 0;
 }
 
 .container {
@@ -56,6 +84,23 @@ a:hover {
   padding: 0;
   background: none;
   text-transform: uppercase;
+  position: relative;
+}
+.navbar .navbar-nav > li > a::before {
+  background: trnasparent;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 30px;
+}
+.navbar .navbar-nav > li.active > a:before, .navbar .navbar-nav > li > a:hover:before {
+  background: #000;
 }
 .navbar .well-text {
   word-spacing: 3px;
@@ -88,13 +133,13 @@ a:hover {
 }
 
 /*===banner style ====*/
-.banner-wrapper {
+.home-banner .banner-wrapper, .stockists-banner .banner-wrapper, .page-title .banner-wrapper {
   position: relative;
 }
-.banner-wrapper .banner {
+.home-banner .banner-wrapper .banner, .stockists-banner .banner-wrapper .banner, .page-title .banner-wrapper .banner {
   margin-left: 313px;
 }
-.banner-wrapper .container {
+.home-banner .banner-wrapper .container, .stockists-banner .banner-wrapper .container, .page-title .banner-wrapper .container {
   bottom: -50px;
   left: 50%;
   position: absolute;
@@ -104,7 +149,7 @@ a:hover {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.banner-wrapper .baaner-text {
+.home-banner .banner-wrapper .banner-text, .stockists-banner .banner-wrapper .banner-text, .page-title .banner-wrapper .banner-text {
   font-size: 39px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -132,6 +177,7 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  padding-bottom: 36px;
 }
 .dapper-shop .owl-item {
   overflow: hidden;
@@ -183,3 +229,180 @@ a:hover {
 }
 
 /** latest news section **/
+.latest-news {
+  padding: 80px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.latest-news .title {
+  padding-bottom: 80px;
+}
+.latest-news .latest-post-wrap a.post-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.latest-news .latest-post-wrap .latest-post-content .number {
+  font-family: bebas;
+  font-size: 65px;
+  font-weight: normal;
+  left: -8px;
+  letter-spacing: 10px;
+  line-height: 21px;
+  position: absolute;
+  top: -8px;
+}
+.latest-news .latest-post-wrap .latest-post-content .latest-title, .latest-news .latest-post-wrap .latest-post-content .latest-subtitle {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+}
+.latest-news .latest-post-wrap .latest-post-content .latest-title {
+  margin-top: 27px;
+  margin-bottom: 10px;
+}
+.latest-news .latest-post-wrap .latest-post-content .latest-subtitle {
+  font-style: italic;
+}
+
+/** Footer section **/
+footer .signup {
+  height: 379px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+footer .signup .sign-up-form {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+footer .signup .title {
+  color: #fff;
+}
+footer .signup p {
+  font-size: 16px;
+  padding: 20px 0;
+}
+footer .signup .sign-up-content {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 450px;
+}
+footer .signup .sign-up-content .form-inline .form-control {
+  width: 216px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0 none;
+  margin-left: 7px;
+}
+footer .signup .sign-up-content .form-inline .sign-up-submit {
+  display: block;
+  background: none;
+  border: none;
+  font-family: 600;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  font-style: italic;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+footer .footer-link .breadcrumb {
+  text-transform: uppercase;
+  padding: 45px 0;
+}
+footer .footer-link .breadcrumb > li + li::before {
+  color: #000;
+  padding: 0 30px;
+}
+footer .copyright .breadcrumb {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 14px;
+  border-radius: 0;
+}
+footer .copyright .breadcrumb > li + li::before {
+  color: #fff;
+}
+
+/**=== Stockist page ===**/
+.stockists-banner .banner, .page-title .banner {
+  z-index: 1;
+}
+.stockists-banner .banner-text-wrapper, .page-title .banner-text-wrapper {
+  background: #f7f7f7 none repeat scroll 0 0;
+  bottom: -50px;
+  position: absolute;
+  width: 100%;
+}
+.stockists-banner .banner-text-wrapper .container, .page-title .banner-text-wrapper .container {
+  z-index: 2;
+  position: relative;
+  top: -50px;
+  left: 0;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.stockists-content {
+  text-transform: uppercase;
+  background: #f7f7f7 none repeat scroll 0 0;
+  padding-bottom: 50px;
+}
+.stockists-content h3 {
+  margin: 45px 0;
+  font-weight: 800;
+  font-size: 16px;
+}
+.stockists-content p {
+  margin-bottom: 10px;
+}
+
+/**========blog page========**/
+.page-title {
+  padding-top: 235px;
+}
+
+.blog .dapper-shop {
+  margin: 63px 0;
+}
+
+.blog-content {
+  background: #f7f7f7 none repeat scroll 0 0;
+}
+.blog-content .latest-news {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 132px;
+}
+.blog-content .latest-news img {
+  width: 418px;
+}
+.blog-content .latest-news .latest-post-wrap {
+  margin-bottom: 106px;
+}
+.blog-content .latest-news .breadcrumb {
+  font-weight: 600;
+  font-style: italic;
+}
