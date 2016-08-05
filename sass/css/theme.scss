@@ -11,35 +11,37 @@ $font_it: italic;
 $font_nm: normal; 
 
 body{
-color:$black;
-line-height:$line_height;
-font-size:$font_size;
-font-family:$proxima_font;
-font-style: $font_nm;
+	color:$black;
+	line-height:$line_height;
+	font-size:$font_size;
+	font-family:$proxima_font;
+	font-style: $font_nm;
+	letter-spacing:1px;
 }
 
 a{
-color:$black;
-text-decoration:none;
+	color:$black;
+	text-decoration:none;
 }
 
 a:hover{
-color:$black;
+	color:$black;
+	text-decoration:none;
 }
 
 .container {
-    padding: 0 98px;
-    width: 1191px;
+	padding: 0 98px;
+	width: 1191px;
 }
 
 
 .flx {
 	display: -webkit-flex;
-    display: -ms-flexbox;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 
@@ -48,11 +50,11 @@ color:$black;
 .navbar{
 
 margin-bottom:0;
-border:none;
+	border:none;
 
 .custom-logo{
-max-width:100%;
-height:auto;
+	max-width:100%;
+	height:auto;
 }
 
 .navbar-brand{
@@ -68,13 +70,13 @@ height:auto;
 
 
 .navbar-nav > li{
-margin-right:100px;
+	margin-right:100px;
 }
 
 .navbar-nav > li > a{
-padding:0;
-background:none;
-text-transform:uppercase;
+	padding:0;
+	background:none;
+	text-transform:uppercase;
 } 
 
 .well-text {
@@ -83,31 +85,31 @@ text-transform:uppercase;
 }
 
 .cart-box {
-background-color: #ebebeb;
-border: medium none;
-border-radius: 0;
-box-shadow: none;
-padding: 7px 23px 7px 30px;
-position: absolute;
-right: 0;
-text-transform: uppercase;
-top: 0;	
+	background-color: #ebebeb;
+	border: medium none;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 7px 23px 7px 30px;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	top: 0;	
 }
 
 #navbar{
-padding:0;
-text-align:center;
+	padding:0;
+	text-align:center;
 }
 
 .social {
    padding-right: 8px;
-	li {
-		display: inline-block;
-		margin: 0 10px;
-	}
-	li:last-child{
-		margin-right:0;
-	}
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+li:last-child{
+	margin-right:0;
+}
 }
 
 }
@@ -141,20 +143,20 @@ margin-left:313px;
 /*====home shop slider===*/
 
 .dapper-shop {
-    margin-top: 145px;
+	margin-top: 145px;
 	background-color:#f7f7f7;
 	padding:0 14px;
 	position:relative;
 
 .products{
-padding:0;
+	padding:0;
 
 img{
-width:100%;
+	width:100%;
 }
 
 .product{
-margin:0 6px;
+	margin:0 6px;
 }
 
 }	
@@ -170,56 +172,62 @@ margin:0 6px;
 
 
 .owl-item{
-overflow:hidden;
+	overflow:hidden;
 }
 
 .prev , .next{
-position:absolute;
-top:50%;
--webkit-transform:translateY(-50%);
--moz-transform:translateY(-50%);
--ms-transform:translateY(-50%);
--o-transform:translateY(-50%);
-transform:translateY(-50%);
-z-index:1;
-font-family:$bebas_font;
-font-size:24px;
-padding:0;
-cursor:pointer;
-text-decoration:none;
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	transform:translateY(-50%);
+	z-index:1;
+	font-family:$bebas_font;
+	font-size:24px;
+	padding:0;
+	cursor:pointer;
+	text-decoration:none;
 }
 
 .prev{
-left:9px;
+	left:9px;
 }
 
 .next{
-right:9px;
+	right:9px;
 }
 
 .woocommerce-LoopProduct-link > h3 {
-font-size: 12px;
-font-weight: 600;
-margin-bottom: 17px;
-margin-top: 20px;
-padding-left: 23px;
-text-transform: uppercase;
-font-weight:$font_semibold;
-display:inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 17px;
+	margin-top: 20px;
+	padding-left: 23px;
+	text-transform: uppercase;
+	font-weight:$font_bold;
+	display:inline-block;
 }
 
 .woocommerce-LoopProduct-link .price {
-font-weight:$font_semibold;
+	font-weight:$font_bold;
 }
 
 .add_to_cart_button{
-display:block;
-font-style:$font_it;
-font-weight:$font_semibold;
-text-transform: uppercase;
-padding-left: 23px; 
-padding-bottom:25px;
-} 	
+	display:block;
+	font-style:$font_it;
+	font-weight:$font_bold;
+	text-transform: uppercase;
+	padding-left: 23px; 
+	padding-bottom:25px;
+}
+
+.price::before {
+    content: "/ /";
+    padding: 0 9px;
+}
+ 	
 }
 
 /** latest news section **/

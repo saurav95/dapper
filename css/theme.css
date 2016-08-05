@@ -4,6 +4,7 @@ body {
   font-size: 12px;
   font-family: proxima;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 a {
@@ -13,6 +14,7 @@ a {
 
 a:hover {
   color: #000;
+  text-decoration: none;
 }
 
 .container {
@@ -163,19 +165,23 @@ a:hover {
   margin-top: 20px;
   padding-left: 23px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
 }
 .dapper-shop .woocommerce-LoopProduct-link .price {
-  font-weight: 600;
+  font-weight: 700;
 }
 .dapper-shop .add_to_cart_button {
   display: block;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   padding-left: 23px;
   padding-bottom: 25px;
+}
+.dapper-shop .price::before {
+  content: "/ /";
+  padding: 0 9px;
 }
 
 /** latest news section **/
