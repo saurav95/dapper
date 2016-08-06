@@ -7,6 +7,12 @@ body {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
 h3 {
   font-weight: 600;
   font-size: 16px;
@@ -433,4 +439,19 @@ footer .copyright .breadcrumb > li + li::before {
   background: #f7f7f7 none repeat scroll 0 0;
   text-transform: uppercase;
   padding: 68px 0;
+}
+
+/**========Contact page========**/
+.contact-content {
+  background: #f7f7f7 none repeat scroll 0 0;
+  padding: 100px 0;
+}
+.contact-content p {
+  font-size: 12px;
+}
+.contact-content form input {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  height: 40px;
 }
