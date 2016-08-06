@@ -98,7 +98,7 @@ a:hover {
   position: relative;
 }
 .navbar .navbar-nav > li > a::before {
-  background: trnasparent;
+  background: transparent;
   bottom: 0;
   content: "";
   height: 1px;
@@ -330,7 +330,7 @@ footer .signup .sign-up-content .form-inline .sign-up-submit {
   display: block;
   background: none;
   border: none;
-  font-family: 600;
+  font-weight: 600;
   text-transform: uppercase;
   color: #fff;
   position: absolute;
@@ -418,6 +418,7 @@ footer .copyright .breadcrumb > li + li::before {
   font-weight: 600;
   font-style: italic;
   margin-right: 20px;
+  width: 418px;
 }
 
 /**=======page========**/
@@ -449,9 +450,43 @@ footer .copyright .breadcrumb > li + li::before {
 .contact-content p {
   font-size: 12px;
 }
-.contact-content form input {
+.contact-content form input, .contact-content form textarea {
   border-radius: 0;
   box-shadow: none;
   border: none;
   height: 40px;
+  background: #e1e1e1;
+  text-transform: uppercase;
+  padding: 14px;
+}
+.contact-content form textarea {
+  height: auto;
+}
+.contact-content form ::-webkit-input-placeholder {
+  color: #2a2a2a;
+}
+.contact-content form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #2a2a2a;
+}
+.contact-content form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #2a2a2a;
+}
+.contact-content form :-ms-input-placeholder {
+  color: #2a2a2a;
+}
+.contact-content form :focus {
+  box-shadow: none;
+}
+.contact-content form .btn-submit {
+  font-weight: 600;
+  font-stretch: italic;
+  background: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 20px;
+}
+.contact-content form .btn-submit:after {
+  content: " / /";
 }

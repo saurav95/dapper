@@ -120,7 +120,7 @@ margin:0;
 	}
 
 	.navbar-nav > li > a::before {
-		background: trnasparent;
+		background: transparent;
 		bottom: 0;
 		content: "";
 		height: 1px;
@@ -404,7 +404,7 @@ footer{
 					display:block;
 					background:none;
 					border:none;
-					font-family:$font_semibold;
+					font-weight:$font_semibold;
 					text-transform:uppercase;
 					color:#fff;	
 					position:absolute;
@@ -533,6 +533,7 @@ footer{
 			font-weight:$font_semibold;
 			font-style:$font_it;
 			margin-right:20px;
+			width:418px;
 		}
 	}	
 	
@@ -577,6 +578,47 @@ p{
 			box-shadow:none;
 			border:none;
 			height:40px;
+			background:#e1e1e1;
+			text-transform:uppercase;
+			padding:14px;
 		}
+		textarea{
+			@extend input;
+			height:auto;	
+		}
+
+		::-webkit-input-placeholder {
+		   color: #2a2a2a;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #2a2a2a;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #2a2a2a;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #2a2a2a;  
+		}
+		
+		:focus{
+			box-shadow:none;
+		}
+
+		.btn-submit{
+			font-weight:$font_semibold;
+			font-stretch:$font_it;
+			background:none;
+			text-transform:uppercase;
+			padding:0;
+			margin-top:20px;
+		}
+			
+		.btn-submit:after{
+			content: " / /";
+		}	
+		
 	}
 }
